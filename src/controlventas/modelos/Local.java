@@ -9,23 +9,34 @@ package controlventas.modelos;
  *
  * @author chrisloops
  */
-public class Cliente extends Persona{
-    
-    private String nit;
+public class Local {
+    private int id;
+    private String nombre;
     private String direccion;
+    
+    public Local(){
+    }
 
-    public Cliente(String nit, String direccion, int id, String nombre, String apellido) {
-        super(id, nombre, apellido);
-        this.nit = nit;
+    public Local(int id, String nombre, String direccion) {
+        this.id = id;
+        this.nombre = nombre;
         this.direccion = direccion;
     }
 
-    public String getNit() {
-        return nit;
+    public int getId() {
+        return id;
     }
 
-    public void setNit(String nit) {
-        this.nit = nit;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getDireccion() {
@@ -35,5 +46,7 @@ public class Cliente extends Persona{
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+    
+    
     
 }

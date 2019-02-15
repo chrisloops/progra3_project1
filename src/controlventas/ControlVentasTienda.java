@@ -5,6 +5,7 @@
  */
 package controlventas;
 
+import controlventas.controladores.CajaControlador;
 import controlventas.modelos.Cliente;
 /**
  *
@@ -20,6 +21,8 @@ public class ControlVentasTienda {
         
         //Cliente cliente = new Cliente();
         System.out.println("Bienvenido al Sistema");
+        
+        CajaControlador.instance().mostrarMenu();
     }
     
 }
